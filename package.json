@@ -1,0 +1,25 @@
+{
+  "name": "react-native-countdown-hint",
+  "version": "0.0.1",
+  "description": "A countdown component for waiting for verification code reception",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shixiaoquan/react-native-countdown-hint.git"
+  },
+  "keywords": [
+    "react-native",
+    "countdown",
+    "component",
+    "verifycode"
+  ],
+  "author": "shixiaoquan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shixiaoquan/react-native-countdown-hint/issues"
+  },
+  "homepage": "https://github.com/shixiaoquan/react-native-countdown-hint#readme"
+}
