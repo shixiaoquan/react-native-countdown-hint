@@ -1,6 +1,6 @@
 {
   "name": "react-native-countdown-hint",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A countdown component for waiting for verification code reception",
   "main": "index.js",
   "scripts": {
