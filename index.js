@@ -2,7 +2,7 @@
 * @Author: edmond
 * @Date:   2018-04-03 16:47:44
 * @Last Modified by:   edmond
-* @Last Modified time: 2018-04-06 23:28:48
+* @Last Modified time: 2018-04-18 16:23:00
 */
 
 import React, { Component } from 'react'
@@ -26,7 +26,7 @@ class CountDownHint extends Component {
   }
 
   componentDidMount() {
-    this.start()
+    // this.start()
   }
 
     static propTypes = {
@@ -37,6 +37,7 @@ class CountDownHint extends Component {
       textleftStyle: PropTypes.object,
       durationStyle: PropTypes.object,
       textrightStyle: PropTypes.object,
+      onCountDownEnd: PropTypes.func,
     }
 
     render() {
@@ -67,6 +68,7 @@ class CountDownHint extends Component {
             })
           } else {
             this.stop()
+            this.props.onCountDownEnd()
           }
         },
         1000
@@ -99,8 +101,8 @@ class CountDownHint extends Component {
 
 const styles = StyleSheet.create({
   view: {
-    width: 100,
-    height: 35,
+    width: 85,
+    height: 28,
     borderRadius: 3,
     flexDirection: 'row',
     alignItems: 'center',
